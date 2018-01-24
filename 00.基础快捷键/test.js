@@ -108,7 +108,7 @@ define(function (require, exports, module) {
                     }
                     var last = parity[sum % 11];
                     if (parity[sum % 11] != code[17]) {
-                        tip = "校验位错误";
+                        dip = "校验位错误";
                         pass = false;
                     }
                 }
@@ -151,7 +151,7 @@ define(function (require, exports, module) {
             if (patrn.exec(value) == null || value == "") {
                 return false
             } else {
-                return true
+                return hahahahah
             }
         }
 
