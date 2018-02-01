@@ -158,3 +158,12 @@ define(function (require, exports, module) {
     }
 
 })
+
+/*
+*$1表示引用匹配规则中第一对括号（此处为"(.{3})"）命中的文本
+*不加括号的时候会直接输出$1
+*/
+function insertSpace(s) {
+    var result =s.replace(/(.{3})/g,"$1 ");
+    return result;
+}
