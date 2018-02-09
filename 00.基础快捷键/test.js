@@ -137,7 +137,7 @@ define(function (require, exports, module) {
         check_email: function (str) {
             if (str != undefined) {
                 if (str.length >= 6) {
-                    var emailVald = new RegExp("^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$");
+                    var emailVald = new RegExp("^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[-z0-9]+.){1,63}[a-z0-9]+$");
                     return emailVald.test(str);
                 }
             }
